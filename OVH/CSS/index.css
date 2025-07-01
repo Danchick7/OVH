@@ -340,7 +340,7 @@ body {
     font-weight: 400;
     position: relative;
     z-index: 1;
-    text-shadow: #FBB32F 1cap 2px;
+    text-shadow: #FBB32F 1px 2px;
 }
 
 /* Angled Sections */
