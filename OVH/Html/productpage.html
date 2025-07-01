@@ -3,102 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Product Page</title>
+  <title>Winter Product Page</title>
+  <link rel="stylesheet" href="../CSS/Productpage.css" />
+  <link rel="stylesheet" href="../CSS/index.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f4f6;
-      margin: 0;
-      padding: 0;
+    .section-title, h2, h3, h1 {
+      color: #222 !important;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.08);
     }
-
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .product-grid {
+      margin-top: 2rem;
+    }
     .container {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .product {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    @media (min-width: 768px) {
-      .product {
-        flex-direction: row;
-      }
-    }
-
-    .product-image {
-      flex: 1;
-    }
-
-    .product-image img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .product-info {
-      flex: 1;
-    }
-
-    .product-title {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .product-price {
-      font-size: 22px;
-      color: #1f9d55;
-      margin-bottom: 20px;
-    }
-
-    .product-description {
-      color: #555;
-      margin-bottom: 30px;
-    }
-
-    .add-to-cart {
-      background-color: #2563eb;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .add-to-cart:hover {
-      background-color: #1d4ed8;
+      padding-top: 100px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header from index.html -->
+  <header class="header">
+      <div class="container">
+          <div class="logo">
+              <img src="../Images/Logo.png" alt="Thermo logo" class="logo-img">
+          </div>
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+              <ul>
+                  <li><a href="../Html/index.html">Home</a></li>
+                  <li><a href="../Html/about-us.html">About Us</a></li>
+                  <li><a href="../Html/productpage.html">Our products</a></li>
+              </ul>
+          </nav>
+          <!-- Contact Button (Desktop) -->
+          <div class="contact-wrapper">
+              <a href="#contact" class="contact-btn">
+                  <span class="contact-burst">Contact us</span>
+              </a>
+          </div>
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+          </button>
+      </div>
+      <!-- Mobile Navigation Overlay -->
+      <div class="nav-mobile-overlay">
+          <div class="nav-mobile-header">
+              <div class="mobile-logo">
+                  <img src="../Images/Logo.png" alt="Heroes Dutch Comic Con">
+              </div>
+              <button class="mobile-close-btn">&times;</button>
+          </div>
+          <nav class="nav-mobile">
+              <ul>
+                  <li><a href="../Html/index.html">Home</a></li>
+                  <li><a href="../Html/about-us.html">About Us</a></li>
+                  <li><a href="../Html/productpage.html">Our products</a></li>
+                  <li><a href="#contact">Contact us</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <!-- End Header -->
+
   <div class="container">
-    <div class="product">
-      
-      <div class="product-image">
-        <img src="" alt="Product Image">
+    <section class="winter-section">
+      <h1 class="section-title">❄️ Try out some of our amazing offers❄️</h1>
+      <div class="product-grid">
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="../Images/shoes.png" alt="Shoes Image" class="product-image" />
+          <h2 class="product-title">SECHOv3</h2>
+          <p class="product-price">$59.99</p>
+          <p class="product-description">
+            Comfortable and stylish shoes designed for everyday wear and long walks.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="../Images/thermopants.png" alt="Pants Image" class="product-image" />
+          <h2 class="product-title">Sandevista2 thermpants</h2>
+          <p class="product-price">$39.99</p>
+          <p class="product-description">
+            Durable and flexible pants perfect for work, casual, or outdoor adventures.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="../Images/Poncho.png" alt="Poncho Image" class="product-image" />
+          <h2 class="product-title">ECU Poncho</h2>
+          <p class="product-price">$29.99</p>
+          <p class="product-description">
+            A lightweight, waterproof poncho ideal for staying dry in unexpected rain.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img src="../Images/Top-front.png" alt="Top Image" class="product-image" />
+          <h2 class="product-title">Witchertopino</h2>
+          <p class="product-price">$24.99</p>
+          <p class="product-description">
+            A breathable and stylish top, perfect for layering or wearing on its own.
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
       </div>
-
-      <div class="product-info">
-        <h1 class="product-title">Awesome Product Name</h1>
-        <p class="product-price">$49.99</p>
-        <p class="product-description">
-          This is a detailed description of the product. It highlights its features, benefits, and what makes it unique.
-          Use this space to convince the visitor why they need it.
-        </p>
-        <button class="add-to-cart">Add to Cart</button>
-      </div>
-
-    </div>
+    </section>
   </div>
 
+  <!-- Footer from index.html -->
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-info">
+                  <div class="footer-section">
+                      <h4>Thetive</h4>
+                      <p>Phone: +31 20 123 4567</p>
+                      <p>Email: info@Thetive.nl</p>
+                  </div>
+                  <div class="footer-section">
+                      <h4>Venue</h4>
+                      <p>Thetive INC</p>
+                      <p>hokelbergweg 6</p>
+                      <p>3521 AL Berkelpolder</p>
+                  </div>
+                  <div class="footer-section">
+                      <h4>Follow us</h4>
+                      <div class="social-links">
+                          <a href="#" aria-label="Facebook">📘</a>
+                          <a href="#" aria-label="Twitter">🐦</a>
+                          <a href="#" aria-label="Instagram">📷</a>
+                          <a href="#" aria-label="YouTube">📺</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                  <div class="footer-logo">
+                      <img src="../Images/Logo.png" alt="Heroes Logo">
+                  </div>
+                  <div class="footer-legal">
+                      <p>&copy;Thetive</p>
+                      <p>by Danzie INC</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="../Javascript/index.js"></script>
 </body>
 </html>

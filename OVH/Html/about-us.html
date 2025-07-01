@@ -4,14 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us</title>
-    <link rel="stylesheet" href="../CSS/about-us.css" />
+  <link rel="stylesheet" href="../CSS/about-us.css" />
+  <link rel="stylesheet" href="../CSS/index.css" /> <!-- Add index.css for header/footer styles -->
+  <style>
+    .section-title, h2, h3, h1 {
+      color: #222 !important; /* Use #fff if your background is dark */
+      text-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .team-member h3 {
+      color: #222 !important;
+    }
+    .container > section:first-child {
+      margin-top: 100px;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>About Our Company</h1>
-    <p>We are passionate about building innovative solutions that make a real difference.</p>
+  <!-- Header from index.html -->
+  <header class="header">
+      <div class="container">
+          <div class="logo">
+              <img src="../Images/Logo.png" alt="Thermo logo" class="logo-img">
+          </div>
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="../Html/about-us.html">About Us</a></li>
+                  <li><a href="../Html/productpage.html">Our products</a></li>
+              </ul>
+          </nav>
+          <!-- Contact Button (Desktop) -->
+          <div class="contact-wrapper">
+              <a href="#contact" class="contact-btn">
+                  <span class="contact-burst">Contact us</span>
+              </a>
+          </div>
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+          </button>
+      </div>
+      <!-- Mobile Navigation Overlay -->
+      <div class="nav-mobile-overlay">
+          <div class="nav-mobile-header">
+              <div class="mobile-logo">
+                  <img src="../Images/Logo.png" alt="Heroes Dutch Comic Con">
+              </div>
+              <button class="mobile-close-btn">&times;</button>
+          </div>
+          <nav class="nav-mobile">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about-us">About Us</a></li>
+                  <li><a href="#our-products">Our products</a></li>
+                  <li><a href="#contact">Contact us</a></li>
+              </ul>
+          </nav>
+      </div>
   </header>
+  <!-- End Header -->
 
   <div class="container">
     
@@ -19,7 +79,7 @@
       <h2 class="section-title">Our Story</h2>
       <div class="section-content">
         <p>
-          Founded in 2020, our company began with a simple idea: make technology more human.
+          Founded in 2025, our company began with a simple idea: make sports technology more accessible to everyone. We felt that athletes are often limited by the weather to fully bring the most out of their performance, therefore we decided to create a line of clothing that not only works on colder days but also in the hottest.
           Since then, we've grown into a team of dedicated professionals committed to innovation, integrity, and impact.
         </p>
       </div>
@@ -29,8 +89,8 @@
       <h2 class="section-title">Our Mission</h2>
       <div class="section-content">
         <p>
-          Our mission is to empower people and businesses through cutting-edge products and services that solve real-world problems.
-          We believe in transparency, creativity, and creating value that lasts.
+          Our mission is to empower people and businesses through cutting-edge products and technology that solve real-world problems for athletes and event organisers alike.
+          We believe in transparency, creativity, and creating value that lasts. We strive to lead the industry with our innovative approach and commitment to excellence.
         </p>
       </div>
     </section>
@@ -39,24 +99,95 @@
       <h2 class="section-title">Meet the Team</h2>
       <div class="team">
         <div class="team-member">
-          <img src="https://via.placeholder.com/100" alt="Team Member">
-          <h3>Jane Doe</h3>
+          <img src="../Images/Z.png" alt="Team Member">
+          <h3>Zarillio Etmon</h3>
           <p>CEO & Founder</p>
         </div>
         <div class="team-member">
-          <img src="https://via.placeholder.com/100" alt="Team Member">
-          <h3>John Smith</h3>
+          <img src="../Images/Daniel.png" alt="Team Member">
+          <h3>Daniel Ivanov</h3>
           <p>CTO</p>
         </div>
         <div class="team-member">
-          <img src="https://via.placeholder.com/100" alt="Team Member">
-          <h3>Alice Johnson</h3>
+          <img src="../Images/Silverhand.png" alt="Team Member">
+          <h3>Johnny Silverhand</h3>
           <p>Head of Marketing</p>
         </div>
       </div>
     </section>
-
   </div>
 
+  <!-- Footer from index.html -->
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-info">
+                  <div class="footer-section">
+                      <h4>Thetive</h4>
+                      <p>Phone: +31 20 123 4567</p>
+                      <p>Email: info@Thetive.nl</p>
+                  </div>
+                  <div class="footer-section">
+                      <h4>Venue</h4>
+                      <p>Thetive INC</p>
+                      <p>hokelbergweg 6</p>
+                      <p>3521 AL Berkelpolder</p>
+                  </div>
+                  <div class="footer-section">
+                      <h4>Follow us</h4>
+                      <div class="social-links">
+                          <a href="#" aria-label="Facebook">📘</a>
+                          <a href="#" aria-label="Twitter">🐦</a>
+                          <a href="#" aria-label="Instagram">📷</a>
+                          <a href="#" aria-label="YouTube">📺</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                  <div class="footer-logo">
+                      <img src="../Images/Logo.png" alt="Heroes Logo">
+                  </div>
+                  <div class="footer-legal">
+                      <p>&copy;Thetive</p>
+                      <p>by Danzie INC</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Contact Modal (optional, if you want the contact modal to work here too) -->
+  <div class="modal-overlay" id="contactModal">
+      <div class="modal">
+          <div class="modal-header">
+              <h3>Contact Us</h3>
+              <button class="modal-close">&times;</button>
+          </div>
+          <div class="modal-content">
+              <form class="contact-form">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" name="subject" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="submit-btn">Send Message</button>
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <script src="../Javascript/index.js"></script>
 </body>
 </html>
