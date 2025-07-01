@@ -523,8 +523,8 @@ body {
     transition: transform 0.3s ease;
 }
 
-.Diagram:hover .floor-plan-image {
-    transform: scale(1.02);
+.Diagram:hover .Diagram-image {
+    transform: scale(1.05) rotate(2deg);
 }
 
 /* Anniversary Section */
