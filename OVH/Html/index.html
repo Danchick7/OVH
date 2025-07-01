@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermo</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./Images/Logo.png" alt="Thermo logo" class="logo-img">
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about us">About Us</a></li>
+                    <li><a href="#our products">Our products</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Contact Button (Desktop) -->
+            <div class="contact-wrapper">
+                <a href="#contact" class="contact-btn">
+                    <span class="contact-burst">Contact us</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="nav-mobile-overlay">
+            <div class="nav-mobile-header">
+                <div class="mobile-logo">
+                    <img src="./Images/Logo.png" alt="Heroes Dutch Comic Con">
+                </div>
+                <button class="mobile-close-btn">&times;</button>
+            </div>
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#special-guests">About Us</a></li>
+                    <li><a href="#about us">About Us</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="./Images/Sportshero.png" alt="Herobanner" class="hero-image">
+        </div>
+        <div class="hero-content">
+            <div class="event-date">
+                <h1 class="event-date-main">Summer  | 2025</h1>
+                <h2 class="event-location">Starter sale! Get everything for 60% off!</h2>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Interactive Cards Section -->
+    <section class="cards-section angled-section-right" data-scroll-animation="slide-in-right">
+        <div class="container">
+            <div class="cards-grid">
+                <div class="card interactive-card" data-category="photoshoot">
+                    <div class="card-image">
+                        <img src="placeholder-photoshoot.jpg" alt="Photoshoot">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Photoshoot</h3>
+                    </div>
+                </div>
+                
+                <div class="card interactive-card" data-category="cosplay">
+                    <div class="card-image">
+                        <img src="placeholder-cosplay.jpg" alt="who we are">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Who we are</h3>
+                    </div>
+                </div>
+                
+                <div class="card interactive-card featured-card" data-category="meet-greet">
+                    <div class="card-image">
+                        <img src="placeholder-meet-greet.jpg" alt="See who you are">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>See who you are</h3>
+                        <p>The true athletic prowess of yourself</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plan Section -->
+    <section class="floor-plan-section angled-section-left" data-scroll-animation="slide-in-left">
+        <div class="container">
+            <h2 class="section-title fade-in-title">Better than our competitors</h2>
+            <div class="Diagram">
+                <img src="placeholder.jpg" alt="Diagram" class="Diagram-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Anniversary Section -->
+    <section class="anniversary-section angled-section-right" data-scroll-animation="slide-in-right">
+        <div class="container">
+            <div class="anniversary-content">
+                <div class="anniversary-text">
+                    <h2 class="anniversary-number">Stay cool</h2>
+                    <p class="anniversary-subtitle">The heat of battle doesn't stop you.</p>
+                </div>
+                <div class="anniversary-hero">
+                    <img src="placeholder-anniversary-hero.jpg" alt="Runner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors-section angled-section-left" data-scroll-animation="slide-in-left">
+        <div class="container">
+            <h2 class="section-title fade-in-title">Check out our products!</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-logo" data-delay="0">
+                    <img src="placeholder.png" alt="poncho">
+                </div>
+                <div class="sponsor-logo" data-delay="100">
+                    <img src="placeholder.png" alt="shirt">
+                </div>
+                <div class="sponsor-logo mojo-logo" data-delay="200">
+                    <img src="placeholder.png" alt="pants">
+                </div>
+                <div class="sponsor-logo" data-delay="300">
+                    <img src="placeholder.png" alt="shoes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h4>Thetive</h4>
+                        <p>Phone: +31 20 123 4567</p>
+                        <p>Email: info@Thetive.nl</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Venue</h4>
+                        <p>Thetive INC</p>
+                        <p>hokelbergweg 6</p>
+                        <p>3521 AL Berkelpolder</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook">📘</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="Instagram">📷</a>
+                            <a href="#" aria-label="YouTube">📺</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-logo">
+                        <img src="./Images/Logo.png" alt="Heroes Logo">
+                    </div>
+                    <div class="footer-legal">
+                        <p>&copy;Thetive</p>
+                        <p>by Danzie INC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Contact Us</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Javascript/index.js"></script>
+</body>
+</html>
